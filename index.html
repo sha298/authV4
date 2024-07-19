@@ -8,8 +8,13 @@
     
 </head>
 <body>
-    <button class="scan-button" id="blink"><img src="scan.png" class="image"></button>
-
+    <button class="scan-button" id="blink">
+        <img src="scan.png" class="image1">
+        <img src="click.png" class="image2">
+    </button>
+    <div class="loader-container">
+        <span class="loader"></span>
+      </div>      
     <div class="icon-bar">
 		<a href="#"><i class="fas fa-home"></i></a>
 		<a href="#"><i class="fas fa-search"></i></a>
@@ -20,6 +25,25 @@
 <script type="text/javascript">
     let blink =
         document.getElementById('blink');
+      // Add event listener for click on the button
+    blink.addEventListener('click', function() {
+    // Hide both images by setting their display to none
+    this.querySelector('.image1').style.display = 'none';
+    this.querySelector('.image2').style.display = 'none';
+    this.querySelector('.scan-button').style.display = 'none';
+    });
+
+const loader = document.querySelector('.loader');
+
+blink.addEventListener('click', () => {
+  console.log('Button clicked'); // Check if this logs
+  loader.style.display = 'block';
+  console.log('Loader displayed: ', loader.style.display); // Check the display property
+  // Simulate loading
+  setTimeout(() => {
+    loader.style.display = 'none';
+  }, 4000);
+});
 
     setInterval(function () {
         blink.style.opacity =
