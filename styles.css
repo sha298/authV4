@@ -16,6 +16,7 @@ body {
     display: flex;
     justify-content: space-between;
     margin-top: auto;
+    position: fixed;
 }
 .icon-bar a {
     color: rgb(95, 94, 94);
