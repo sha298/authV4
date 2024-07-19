@@ -1,0 +1,46 @@
+body {
+    background-color: #FFFFF7;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* add this to make the body full height */
+    display: flex; /* add this to make the body a flex container */
+    flex-direction: column; /* add this to make the body a column flex container */
+}
+.content {
+    flex: 1; /* add this to make the content area take up the remaining space */
+}
+.icon-bar {
+    background-color: rgba(235, 231, 231, 0.5); /* transparent background */
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+}
+.icon-bar a {
+    color: rgb(95, 94, 94);
+    font-size: 40px;
+    text-decoration: none;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.icon-bar a:hover {
+    color: #d3c5c5;
+}
+.image {
+    width: 100px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 200px;
+    margin-bottom: auto;
+}
+.scan-button{
+    color: #FFFFF7;
+    background-color: #fffff7;
+    border-width: 0;
+}

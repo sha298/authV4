@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auth</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+</head>
+<body>
+    <button class="scan-button" id="blink"><img src="scan.png" class="image"></button>
+
+    <div class="icon-bar">
+		<a href="#"><i class="fas fa-home"></i></a>
+		<a href="#"><i class="fas fa-search"></i></a>
+		<a href="#"><i class="fas fa-user"></i></a>
+	</div>
+</body>
+<script src="https://kit.fontawesome.com/964f8f01e2.js" crossorigin="anonymous"></script>
+<script type="text/javascript">
+    let blink =
+        document.getElementById('blink');
+
+    setInterval(function () {
+        blink.style.opacity =
+            (blink.style.opacity == 0 ? 1 : 0);
+    }, 1000); 
+</script>
+</html>
